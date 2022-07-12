@@ -9,6 +9,8 @@
     --title-color: hsl(250, 8%, 15%);
     --text-color: hsl(250, 8%, 35%);
     --body-color: hsl(250, 60%, 98%);
+    --second-color: hsl(284, 88%, 61%);
+    --second-color-alt: hsl(280, 88%, 61%);
     --container-color: #fff;
     --shadow: hsla(0, 0%, 15%, .1);
     --scroll-bar-color: hsl(250, 12%, 90%);
@@ -128,7 +130,7 @@ input {
 }
 
 .breadcrumb__subtitle span{
-    color: var(--first-color);
+    color: var(--second-color);
 }
 
 /*=============== LAYOUT ===============*/
@@ -168,8 +170,24 @@ input {
 .nav__shop {
     color: var(--title-color);
 }
+
+.nav__shop{
+    color: var(--second-color);
+    position: relative;
+}
+.nav__shop .cart-item{
+    color: #fff;
+    position: absolute;
+    border-radius: 50%;
+    font-weight: var(--font-bold);
+    font-size: var(--small-font-size);
+    padding: .05rem .25rem;
+    top: -.75rem;
+    right: -.7rem;
+    background-color: var(--second-color);
+}
 .nav__logo{
-    text-transform: lowercase;
+    /* text-transform: lowercase; */
     font-weight: var(--font-bold);
     letter-spacing: 1.5px;
     display: inline-flex;
@@ -178,6 +196,7 @@ input {
 }
 .nav__logo-icon{
     font-size: 1.25rem;
+    color: var(--second-color-alt);
 }
 .nav__btns{
     display: flex;
@@ -204,7 +223,7 @@ input {
     transition: .3s;
 }
 .nav__link:hover{
-    color: var(--first-color);
+    color: var(--second-color);
 }
 .nav__toggle,
 .nav__close{
@@ -317,13 +336,6 @@ input {
 
 
 
-
-
-
-
-
-
-
 /* Swiper Class */
 .swiper-pagination{
     position: initial;
@@ -347,7 +359,7 @@ input {
 /*=============== BUTTONS ===============*/
 .button{
     display: inline-block;
-    background: var(--first-color);
+    background: var(--second-color);
     color: #fff;
     padding: 1rem 1.75rem;
     font-weight: var(--font-medium);
@@ -355,7 +367,7 @@ input {
     transition: .3s;
 }
 .button:hover{
-    background: var(--first-color-alt);
+    background: var(--second-color-alt);
 }
 .button__icon{
     font-size: 1.25rem;
@@ -413,7 +425,7 @@ input {
   position: absolute;
   top: 8%;
   left: 8%;
-  background-color: var(--first-color);
+  background-color: var(--second-color);
   color: #fff;
   font-size: var(--small-font-size);
   padding: .25rem .5rem;
@@ -438,7 +450,7 @@ input {
     columns: var(--title-color);
 }
 .new__discount{
-    color: var(--first-color);
+    color: var(--second-color);
     font-size: var(--smaller-font-size);
     text-decoration: line-through;
     font-weight: var(--font-medium);
@@ -478,7 +490,7 @@ input {
 }
 .steps__card-number{
     display: inline-block;
-    background-color: var(--first-color);
+    background-color: var(--second-color);
     color: #fff;
     padding: .5rem .75rem;
     border-radius: .25rem;
@@ -586,7 +598,7 @@ input {
     position: absolute;
     top: 8%;
     left: 8%;
-    background-color: var(--first-color);
+    background-color: var(--second-color);
     color: #fff;
     font-size: var(--small-font-size);
     padding: .25rem .5rem;
@@ -611,7 +623,7 @@ input {
     color: var(--title-color);
 }
 .shop__discounts{
-    color: var(--first-color);
+    color: var(--second-color);
     font-size: var(--smaller-font-size);
     text-decoration: line-through;
     font-weight: var(--font-medium);
@@ -646,7 +658,7 @@ input {
     margin-top: var(--mb-2-5);
     font-size: var(--normal-font-size);
 }
-.pagination span{
+.pagination span {
     width: 2.2rem;
     height: 2.2rem;
     line-height: 36px;
@@ -654,12 +666,111 @@ input {
     border-radius: 50%;
     cursor: pointer;
 }
+.pagination span:active{
+    background-color: var(--second-color-alt);
+    color: #fff;
+}
+.item__number{
+    color: #fff;
+}
 .pagination .current{
-    background-color: var(--first-color);
+    background-color: var(--second-color);
     color: #fff;
 }
 
+
+
 /*=============== DETAILS PAGE ===============*/
+.details__container{
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center ;
+    column-gap: 3rem;
+}
+.product__images{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.4rem;
+}
+.product__img{
+    background-color: var(--container-color);
+    padding: 1.2rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: .5rem;
+    position: relative;
+    cursor: pointer;
+}
+.details__img-tag{
+    position: absolute;
+    top: 8%;
+    left: 8%;
+    background-color: var(--second-color);
+    color: #fff;
+    font-size: var(--small-font-size);
+    padding: .16rem .5rem;
+    border-radius: .25rem;
+}
+.product__img img{
+    width: 150px;
+}
+.details__subtitle{
+    font-size: var(--small-font-size);
+    color: var(--text-color);
+    margin-bottom: var(--mb-0-5);
+}
+.details__title{
+    font-size: var(--h2-font-size);
+    font-weight: var(--font-medium);
+    margin-bottom: var(--mb-0-75);
+}
+.rating{
+    display: flex;
+    align-items: center;
+    column-gap: 1.2rem;
+    margin-bottom: var(--mb-1);
+}
+.rating span{
+    font-size: var(--small-font-size);
+}
+.rating i{
+    margin-right: .1rem;
+}
+.details__prices{
+    display: inline-flex;
+    align-items: center;
+    column-gap: .8rem;
+    margin-bottom: var(--mb-1-5);
+}
+.details__price{
+    font-weight: var(--font-medium);
+    color: var(--title-color);
+    font-size: var(--h3-font-size);
+}
+.details__discount{
+    color: var(--second-color);
+    text-decoration: line-through;
+    font-weight: var(--font-medium);
+}
+.details__percentages{
+    background-color: var(--title-color);
+    padding: .25rem .40rem;
+    font-size: var(--smaller-font-size);
+    color: #fff;
+}
+.description__details{
+    margin-bottom: var(--mb-2);
+    font-size: var(--small-font-size);
+}
+.description__title{
+    font-size: var(--normal-font-size);
+    margin-bottom: var(--mb-0-5);
+}
+.details .cart__amount{
+    margin-bottom: var(--mb-2-5);
+}
+
+
+
 
 
 /*=============== ABOUT PAGE ===============*/
@@ -689,16 +800,9 @@ input {
 }
 .about__details-icon{
     font-size: 1rem;
-    color: var(--first-color);
+    color: var(--second-color);
     margin-top: .15rem;
 }
-
-
-
-
-
-
-
 
 
 
@@ -800,7 +904,7 @@ input {
 /*Rotate icon, change color of titles and background*/
 .accordion-open .questions__header,
 .accordion-open .questions__content {
-    background-color: var(--first-color);
+    background-color: var(--second-color);
 }
 
 .accordion-open .questions__item-title,
@@ -828,7 +932,7 @@ input {
 }
 .contact__icon{
     font-size: 2rem;
-    color: var(--first-color);
+    color: var(--second-color);
     margin-right: var(--mb-0-75);
 }
 .contact__title{
@@ -864,11 +968,6 @@ input {
     outline: none;
     padding: .25rem .5rem .5rem 0;
 }
-
-
-
-
-
 
 
 
@@ -946,7 +1045,7 @@ input {
     position: fixed;
     right: 1rem;
     bottom: -30%;
-    background: var(--first-color);
+    background: var(--second-color);
     border-radius: .4rem;
     display: inline-flex;
     padding: .25rem;
@@ -1037,7 +1136,7 @@ input {
 }
 
 .signup a {
-    color: var(--first-color);
+    color: var(--second-color);
 }
 
 /* Show login */
@@ -1105,7 +1204,7 @@ input {
 .cart__price {
     display: block;
     font-size: var(--small-font-size);
-    color: var(--first-color);
+    color: var(--second-color);
     margin-bottom: var(--mb-1-5);
 }
 
@@ -1132,7 +1231,7 @@ input {
 
 .cart__amount-trash {
     font-size: 1.15rem;
-    color: var(--first-color);
+    color: var(--second-color);
     cursor: pointer;
 }
 
@@ -1163,13 +1262,113 @@ input {
 }
 
 /*=============== LIGHTBOX ===============*/
+.lightbox{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .6);
+    z-index: var(--z-fixed);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    cursor: zoom-out;
+    padding: 1.8rem;
+}
+.lightbox__img{
+    height: auto;
+    width: auto;
+    max-width: 100%;
+    max-height: 450px;
+    cursor: pointer;
+    background-color: var(--container-color);
+    display: block;
+    padding: .6rem;
+}
+.lightbox__content{
+    position: relative;
+}
+.lightbox__close{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    font-size: 2rem;
+    right: 0;
+    top: -2.6rem;
+    color: #fff;
+    text-align: right;
+    line-height: 40px;
+}
+.lightbox__caption{
+    position: absolute;
+    left: 0;
+    bottom: -2.2rem;
+    display: flex; 
+    justify-content: end;
+    font-size: var(--normal-font-size);
+    color: #fff;
+    font-weight: var(--font-medium);
+    z-index: -1;
+}
 
+
+.lightbox__controls .prev__item,
+.lightbox__controls .next__item{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background-color: var(--body-color);
+    color: var(--title-color);
+    text-align: center;
+    z-index: 110;
+    margin-top: -20px;
+    top: 50%;
+    border-radius: 50%;
+    transition: all 0.3 ease;
+}
+
+.lightbox__controls .prev__item{
+    left: 1.8rem;
+}
+.lightbox__controls .next__item{
+    right: 1.8rem;
+}
+
+.lightbox__controls .prev__item .fas,
+.lightbox__controls .next__item .fas{
+    font-size: 2rem;
+    line-height: 40px;
+}
+
+.lightbox__controls .prev__item:hover,
+.lightbox__controls .next__item:active{
+    transform: scale(1.1);
+}
+.lightbox__controls .prev__item:active,
+.lightbox__controls .next__item:active{
+    transform: scale(1);
+}
 
 /* lightbox open */
-
+.lightbox.open{
+    display: flex;
+}
 
 /* lightbox open animation */
+.lightbox.open .lightbox__content{
+    animation: lightboxImage .5s ease;
+}
 
+@keyframes lightboxImage {
+    0% {
+        transform: scale(0.8);
+    }
+    100%{
+        transform: scale(1);
+    }
+    
+}
 
 /*=============== STYLE SWITCHER ===============*/
 
@@ -1309,6 +1508,14 @@ input {
     }
 
 
+    .details__container{
+        grid-template-columns: 1.2fr .8fr;
+    }
+    .details__title{
+        margin-bottom: var(--mb-0-5);
+    }
+
+
 }
 
 /* For medium devices */
@@ -1416,6 +1623,13 @@ input {
     }
 
 
+    .details__container{
+        grid-template-columns: 1fr;
+        row-gap: 2rem;
+        justify-content: center;
+    }
+
+
 
 
 
@@ -1474,6 +1688,11 @@ input {
     }
 
 
+    .details__container{
+        grid-template-columns: 1fr;
+    }
+
+
 
 
 
@@ -1517,6 +1736,11 @@ input {
 
     .blog__post{
         padding: .8rem;
+    }
+
+
+    .product__images{
+        grid-template-columns: 1fr;
     }
 
 }

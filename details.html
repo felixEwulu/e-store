@@ -23,7 +23,7 @@
     <header class="header" id="header">
         <nav class="nav container">
             <a href="index.html" class="nav__logo">
-                <i class="fas fa-shopping-bag nav__logo-icon"></i> e-shop
+                <i class="fas fa-shopping-bag nav__logo-icon"></i> Deluxe-mart
             </a>
     
             <div class="nav__menu" id="nav-menu">
@@ -35,7 +35,7 @@
                         <a href="shop.html" class="nav__link ">Shop</a>
                     </li>
                     <li class="nav__item">
-                        <a href="cart.html" class="nav__link">Cart</a>
+                        <a href="about.html" class="nav__link">About</a>
                     </li>
                     <li class="nav__item">
                         <a href="blog.html" class="nav__link ">Blog</a>
@@ -44,7 +44,7 @@
                         <a href="faq.html" class="nav__link">Faq's</a>
                     </li>
                     <li class="nav__item">
-                        <a href="contact.html" class="nav__link active-link">Contact</a>
+                        <a href="contact.html" class="nav__link">Contact</a>
                     </li>
                 </ul>
     
@@ -61,6 +61,7 @@
     
                 <div class="nav__shop" id="cart-shop">
                     <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-item">3</span>
                 </div>
     
                 <div class="nav__toggle" id="nav-toggle">
@@ -215,12 +216,185 @@
     <main class="main">
         <!--=============== DETAILS ===============-->
         <section class="details section container">
-            <h2 class="breadcrumb__title">Contact Page</h2>
-            <h3 class="breadcrumb__subtitle">Home > <span>Contact us</span></h3>
+            <h2 class="breadcrumb__title">Details Page</h2>
+            <h3 class="breadcrumb__subtitle">Home > <span>Details</span></h3>
+
+            <div class="details__container grid">
+                <div class="product__images grid">
+                    <div class="product__img">
+                        <div class="details__img-tag">New</div>
+                        <img src="assets/img/details-1.png" alt="">
+                    </div>
+                    <div class="product__img">
+                        <img src="assets/img/details-2.png" alt="">
+                    </div>
+                    <div class="product__img">
+                        <img src="assets/img/details-3.png" alt="">
+                    </div>
+                    <div class="product__img">
+                        <img src="assets/img/details-4.png" alt="">
+                    </div>
+                </div>
+
+            <div class="product__info">
+                <p class="details__subtitle">Women > Jacket's</p>
+                <h3 class="details__title">Windbreaker, Denim - Jacket</h3>
+            
+                <div class="rating">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <span class="reviews__count">40 + Reviews</span>
+                </div>
+            
+                <div class="details__prices">
+                    <span class="details__price">$10.99</span>
+                    <span class="details__discount">$20.99</span>
+                    <span class="details__percentages">50% OFF</span>
+                </div>
+            
+                <div class="details__description">
+                    <h3 class="description__title">Product Details</h3>
+                    <div class="description__details">
+                        <p>Light Gray solid Top, has a boat nect, 3/4 sleeves</p>
+                    </div>
+                </div>
+            
+                <div class="cart__amount">
+                    <div class="cart__amount-content">
+                        <span class="cart__amount-box">
+                            <i class="fas fa-minus"></i>
+                        </span>
+            
+                        <span class="cart__amount-number">1</span>
+            
+                        <span class="cart__amount-box">
+                            <i class="fas fa-plus"></i>
+                        </span>
+            
+                    </div>
+            
+                    <i class="fas fa-heart cart__amount-heart"></i>
+                </div>
+            
+                <a href="#" class="button">Add To Cart</a>
+            </div>
+
+            </div>
+
         </section>
 
         <!--=============== RELATED PRODUCTS ===============-->
         <section class="related__products section">
+                <h2 class="section__title">Related Products</h2>
+                
+                <div class="new__container container">
+                    <div class="swiper new-swiper">
+                        <div class="swiper-wrapper">
+                            <!-- New Content 1 -->
+                            <div class="new__content swiper-slide">
+                                <div class="new__tag">New</div>
+                                <img src="assets/img/new-1.png" alt="" class="new__img">
+                                <h3 class="new__title">Windbreaker Jacket</h3>
+                                <span class="new__subtitle">Accessory</span>
+                
+                                <div class="new__prices">
+                                    <span class="new__price">$14.99</span>
+                                    <span class="new__discount">$29.99</span>
+                                </div>
+                
+                                <a href="details.html" class="button new__button">
+                                    <i class="fas fa-shopping-cart new__icon"></i>
+                                </a>
+                            </div>
+                            <!-- New Content 2 -->
+                            <div class="new__content swiper-slide">
+                                <div class="new__tag">New</div>
+                                <img src="assets/img/new-2.png" alt="" class="new__img">
+                                <h3 class="new__title">Windbreaker Jacket</h3>
+                                <span class="new__subtitle">Accessory</span>
+                
+                                <div class="new__prices">
+                                    <span class="new__price">$14.99</span>
+                                    <span class="new__discount">$29.99</span>
+                                </div>
+                
+                                <a href="details.html" class="button new__button">
+                                    <i class="fas fa-shopping-cart new__icon"></i>
+                                </a>
+                            </div>
+                            <!-- New Content 3 -->
+                            <div class="new__content swiper-slide">
+                                <div class="new__tag">New</div>
+                                <img src="assets/img/new-3.png" alt="" class="new__img">
+                                <h3 class="new__title">Windbreaker Jacket</h3>
+                                <span class="new__subtitle">Accessory</span>
+                
+                                <div class="new__prices">
+                                    <span class="new__price">$14.99</span>
+                                    <span class="new__discount">$29.99</span>
+                                </div>
+                
+                                <a href="details.html" class="button new__button">
+                                    <i class="fas fa-shopping-cart new__icon"></i>
+                                </a>
+                            </div>
+                            <!-- New Content 4 -->
+                            <div class="new__content swiper-slide">
+                                <div class="new__tag">New</div>
+                                <img src="assets/img/new-4.png" alt="" class="new__img">
+                                <h3 class="new__title">Windbreaker Jacket</h3>
+                                <span class="new__subtitle">Accessory</span>
+                
+                                <div class="new__prices">
+                                    <span class="new__price">$14.99</span>
+                                    <span class="new__discount">$29.99</span>
+                                </div>
+                
+                                <a href="details.html" class="button new__button">
+                                    <i class="fas fa-shopping-cart new__icon"></i>
+                                </a>
+                            </div>
+                            <!-- New Content 5 -->
+                            <div class="new__content swiper-slide">
+                                <div class="new__tag">New</div>
+                                <img src="assets/img/new-5.png" alt="" class="new__img">
+                                <h3 class="new__title">Windbreaker Jacket</h3>
+                                <span class="new__subtitle">Accessory</span>
+                
+                                <div class="new__prices">
+                                    <span class="new__price">$14.99</span>
+                                    <span class="new__discount">$29.99</span>
+                                </div>
+                
+                                <a href="details.html" class="button new__button">
+                                    <i class="fas fa-shopping-cart new__icon"></i>
+                                </a>
+                            </div>
+                            <!-- New Content 6 -->
+                            <div class="new__content swiper-slide">
+                                <div class="new__tag">New</div>
+                                <img src="assets/img/new-6.png" alt="" class="new__img">
+                                <h3 class="new__title">Windbreaker Jacket</h3>
+                                <span class="new__subtitle">Accessory</span>
+                
+                                <div class="new__prices">
+                                    <span class="new__price">$14.99</span>
+                                    <span class="new__discount">$29.99</span>
+                                </div>
+                
+                                <a href="details.html" class="button new__button">
+                                    <i class="fas fa-shopping-cart new__icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
             
         </section>
     </main>
@@ -231,7 +405,7 @@
             <!-- FOOTER CONTENT 1 -->
             <div class="footer__content">
                 <a href="#" class="footer__logo">
-                    <i class="fas fa-shopping-bag footer__logo-icon"></i> e-shop
+                    <i class="fas fa-shopping-bag footer__logo-icon"></i> Deluxe-mart
                 </a>
     
                 <p class="footer__description">Enjoy the biggest sale <br> of your life</p>
@@ -280,12 +454,92 @@
     </footer>
 
     <!--=============== LIGHTBOX ===============-->
+    <div class="lightbox">
+        <div class="lightbox__content">
+            <div class="lightbox__close">&times;</div>
+            <img src="assets/img/details-1.png" alt="" class="lightbox__img">
+            <div class="lightbox__caption">
+                <div class="caption__text">e-shop</div>
+                <div class="caption__counter">1 of 4</div>
+            </div>
+        </div>
+
+        <div class="lightbox__controls">
+            <div class="prev__item" onclick="prevItem()"><i class="fas fa-chevron-left"></i></div>
+            <div class="next__item" onclick="nextItem()"><i class="fas fa-chevron-right"></i></div>
+        </div>
+    </div>
 
     <!--=============== SCROLL UP ===============-->
     <a href="#" class="scroll-up" id="scroll-up">
         <i class="fas fa-arrow-up scrollup__icon"></i>
     </a>
     <!--=============== STYLE SWITCHER ===============-->
+
+
+
+    <!--=============== LIGHTBOX ===============-->
+    <script>
+        const productItems = document.querySelectorAll('.product__img'),
+              totalProductItems = productItems.length,
+              lightbox = document.querySelector('.lightbox'),
+              lightboxImg = lightbox.querySelector('.lightbox__img'),
+              lightboxClose = lightbox.querySelector('.lightbox__close'),
+              lightboxCounter = lightbox.querySelector('.caption__counter');
+        
+        let itemIndex = 0;
+
+        for(let i=0; i<totalProductItems; i++) {
+            productItems[i].addEventListener('click', function(){
+                itemIndex = i;
+                changeItem();
+                toggleLightbox();
+            })
+        }
+
+       
+
+         function changeItem() {
+                let imgSrc = productItems[itemIndex].querySelector('.product__img img').getAttribute('src');
+                lightboxImg.src = imgSrc;
+                lightboxCounter.innerHTML = `${itemIndex + 1} of ${totalProductItems}`;
+            }
+
+          function toggleLightbox() {
+                lightbox.classList.toggle('open')
+            }
+
+        function nextItem(){
+            if(itemIndex == totalProductItems -1){
+                itemIndex = 0;
+            }
+
+            else{
+                itemIndex++
+            }
+            changeItem();
+
+        }
+        function prevItem(){
+            if(itemIndex == 0){
+                itemIndex = totalProductItems - 1;
+            }
+
+            else{
+                itemIndex--;
+            }
+            changeItem();
+
+        }
+
+    //    close lightbox
+    lightbox.addEventListener('click', function(event){
+        if(event.target === lightboxClose || event.target === lightbox){
+            toggleLightbox();
+        }
+    })
+    </script>
+
     
     <!--=============== SWIPER JS ===============-->
     <script src="assets/js/swiper-bundle.min.js"></script>
