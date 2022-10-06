@@ -1,5 +1,5 @@
 /*=============== GOOGLE FONTS ===============*/
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;900&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;900&display=swap');*/
 
 /*=============== VARIABLES CSS ===============*/
 :root {
@@ -1077,7 +1077,7 @@ input {
     border-radius: .5rem;
 }
 
-/*=============== LOGIN ===============*/
+/*================================================ LOGIN ==========================================*/
 .login {
     position: fixed;
     right: -100%;
@@ -1156,6 +1156,7 @@ input {
     box-shadow: -2px 0 4px var(--shadow);
     padding: 3.5rem 2rem;
     transition: .4s;
+    overflow: scroll;
 }
 
 .cart__title-center {
