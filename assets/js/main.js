@@ -17,6 +17,18 @@ const cartsPricesItemsEl = document.querySelector('.cart__prices-item')
 const newArrival = document.querySelector('.new__container');
 // console.log(newArrival)
 
+// Cookies message
+const cookieMessage = document.createElement('div')
+cookieMessage.innerHTML = `We use cookies for improved functionality and analytics.
+    <button class="btn btn--close-cookie">Got it</button>`;
+cookieMessage.classList.add('cookie-message');
+cookieMessage.style.backgroundColor = '#37383d';
+cookieMessage.style.width = '120%';
+cookieMessage.style.height = Number.parseFloat(getComputedStyle(cookieMessage).height) + 30 + 'px';
+ h   
+
+
+
 
 // All function declarations
 const removeItem = () => {
