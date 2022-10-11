@@ -3,6 +3,7 @@ const navMenu = document.getElementById("nav-menu"),
   navToggle = document.getElementById("nav-toggle"),
   navClose = document.getElementById("nav-close");
 const nav = document.querySelector('.nav');
+const header = document.querySelector(".header");
 
 const loginIcon = document.getElementById("login-toggle");
 const loginClose = document.getElementById("login-close");
@@ -25,7 +26,7 @@ cookieMessage.classList.add('cookie-message');
 cookieMessage.style.backgroundColor = '#37383d';
 cookieMessage.style.width = '120%';
 cookieMessage.style.height = Number.parseFloat(getComputedStyle(cookieMessage).height) + 30 + 'px';
- h   
+ header.append(cookieMessage)   
 
 
 
